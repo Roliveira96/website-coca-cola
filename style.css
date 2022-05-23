@@ -102,14 +102,13 @@ header .navigation li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
-  flex-direction: row;
 }
 .sci li {
   list-style: none;
 }
 
 .sci li a {
+  display: flex;
   margin-left: 15px;
   background: #222;
   width: 50px;
@@ -123,4 +122,92 @@ header .navigation li a {
 .sci li a:hover {
   background: #e51e2a;
   transform: translateY(-10px);
+}
+
+.sci li a img {
+  filter: invert(1);
+  transform: scale(0.5);
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 180px;
+  height: 460px;
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-slide img {
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+  display: block;
+  width: 100%;
+}
+
+.content .imgBox {
+  width: 500px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content .imgBox img {
+  max-width: 150px;
+}
+
+.swiper-3d .swiper-slide-shadow-left {
+  background-image: none;
+}
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
+
+@media (max-width: 991px) {
+  header {
+    padding: 40px;
+  }
+
+  section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 150px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #161616;
+  }
+
+  .sci {
+    position: absolute;
+    bottom: 40px;
+    left: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content {
+    margin-top: 5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content .imgBox {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .content .imgBox {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
 }
